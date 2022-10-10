@@ -10,7 +10,6 @@ body{
     /* background: #0E141B url(/Images/svg4.png) no-repeat; */
     background-color: #171717;
     background-size:auto;
-    
 }
 
 #navbar-container{
@@ -33,6 +32,7 @@ body{
     display: flex;
     list-style: none;
 }
+
 #navbar-items ul li{
     padding: 10px;
     margin: 3px;
@@ -42,7 +42,7 @@ body{
 }
 
 #navbar-items ul li:hover{
-    background-color: #ff4c29;
+    background-color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
     color: #101010;

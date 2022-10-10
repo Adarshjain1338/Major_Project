@@ -24,7 +24,7 @@
         </div>
         <div id="container">
             <div id="container-details">
-                <p><h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ratione,</h1><p> eveniet tenetur animi ex rerum dicta sint exercitationem saepe obcaecati facere? Ipsam temporibus quae rem, illo dignissimos saepe autem nobis mollitia nam molestiae omnis esse dolores tenetur voluptatum commodi quo atque excepturi repellat voluptate sunt quisquam explicabo culpa. Quae aperiam atque quisquam maxime ex eos voluptas deserunt error labore iusto deleniti quam possimus unde, quo neque, recusandae optio repellendus quasi quibusdam officia minima eveniet. Placeat nesciunt rem odio similique, veniam ab ullam reprehenderit quisquam, </p><span id="dots">... </span><span id="more">facilis, deserunt explicabo. Tenetur magni beatae aliquid eum, alias praesentium adipisci deleniti molestiae laborum consequatur, nesciunt laboriosam! Nobis in numquam aut similique hic quaerat alias unde soluta porro earum iste dicta repudiandae, eveniet quas dolore! Harum possimus nulla veniam. Quas deleniti temporibus nostrum dicta laudantium officiis soluta! Obcaecati recusandae voluptatem illo harum esse! Tempora at quis aliquid velit quas, illo ex maiores qui, necessitatibus sapiente tenetur inventore voluptate consequuntur ab aliquam corporis. Dignissimos id eius suscipit iure cumque! Voluptatibus beatae laboriosam autem dolorem vero, deserunt perferendis eius corrupti? Eos reprehenderit rem autem! Quaerat repellendus itaque eius consequuntur distinctio ipsam assumenda quae. Unde ratione dolore nesciunt excepturi ut, facilis, quidem ex reiciendis obcaecati tenetur voluptates pariatur ipsum earum corrupti fugit voluptate necessitatibus tempore eligendi veritatis architecto quibusdam sequi delectus. Neque, saepe? Vero incidunt voluptatibus, alias dolor est recusandae nihil quaerat, quasi temporibus ducimus eligendi corporis perferendis nulla delectus, sint nostrum magni soluta cum repudiandae aliquam sed laboriosam modi. Hic repudiandae accusamus quo dolor? Nihil quas inventore placeat.</span></p>
+                <p><h1 id="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ratione,</h1><p> eveniet tenetur animi ex rerum dicta sint exercitationem saepe obcaecati facere? Ipsam temporibus quae rem, illo dignissimos saepe autem nobis mollitia nam molestiae omnis esse dolores tenetur voluptatum commodi quo atque excepturi repellat voluptate sunt quisquam explicabo culpa. Quae aperiam atque quisquam maxime ex eos voluptas deserunt error labore iusto deleniti quam possimus unde, quo neque, recusandae optio repellendus quasi quibusdam officia minima eveniet. Placeat nesciunt rem odio similique, veniam ab ullam reprehenderit quisquam, </p><span id="dots">... </span><span id="more">facilis, deserunt explicabo. Tenetur magni beatae aliquid eum, alias praesentium adipisci deleniti molestiae laborum consequatur, nesciunt laboriosam! Nobis in numquam aut similique hic quaerat alias unde soluta porro earum iste dicta repudiandae, eveniet quas dolore! Harum possimus nulla veniam. Quas deleniti temporibus nostrum dicta laudantium officiis soluta! Obcaecati recusandae voluptatem illo harum esse! Tempora at quis aliquid velit quas, illo ex maiores qui, necessitatibus sapiente tenetur inventore voluptate consequuntur ab aliquam corporis. Dignissimos id eius suscipit iure cumque! Voluptatibus beatae laboriosam autem dolorem vero, deserunt perferendis eius corrupti? Eos reprehenderit rem autem! Quaerat repellendus itaque eius consequuntur distinctio ipsam assumenda quae. Unde ratione dolore nesciunt excepturi ut, facilis, quidem ex reiciendis obcaecati tenetur voluptates pariatur ipsum earum corrupti fugit voluptate necessitatibus tempore eligendi veritatis architecto quibusdam sequi delectus. Neque, saepe? Vero incidunt voluptatibus, alias dolor est recusandae nihil quaerat, quasi temporibus ducimus eligendi corporis perferendis nulla delectus, sint nostrum magni soluta cum repudiandae aliquam sed laboriosam modi. Hic repudiandae accusamus quo dolor? Nihil quas inventore placeat.</span></p>
                 <button id="btn-readmore">Read more</button>
             </div>
             <div id="container-2">
@@ -62,7 +62,18 @@
         </div>
     </div>
 
-    <script src="./JS/app.js"></script>
+    <script>
+        async function getdata() {
+            const data = await fetch('http://localhost:3000/api/getAll')
+                .then((response) => response.json())
+                // .then((data) => console.log(data));
+            const element = document.getElementById("data")
+            const a = JSON.stringify(data)
+            element.innerText = a
+            console.log(data)
+        }
+        getdata()
+    </script>
 
   </body>
 </html>

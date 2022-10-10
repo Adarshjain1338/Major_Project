@@ -17,6 +17,7 @@ body{
     padding: 5px;
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 #navbar-items{
     /* border: 2px solid green; */
@@ -26,6 +27,7 @@ body{
     margin: 5px;
     margin-bottom: 0px;
     width: 30%;
+    
 }
 #navbar-items ul{
     margin: 0.1em;

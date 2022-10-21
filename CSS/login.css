@@ -18,11 +18,12 @@ body {
     box-sizing: border-box;
     border-radius: 15px;
     padding: 80px 30px;
-    box-shadow: 0 0px 300px -150px white;
     background-image: url(/Images/SVGG3\ \(2\).png);
     background-position: center;
     background-repeat: no-repeat;
-  }
+    border: 2px solid gray;
+    box-shadow: 0 0px 300px -150px white;
+}
   
   .avatar {
     width: 100px;

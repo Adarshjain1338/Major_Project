@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    box-sizing: border-box;
+  }
+  .login-container {
+    margin: 0;
+    padding: 20px;
+    font-family: arial;
+    font-size: 1.2em;
+    background-color: #101010;
+    height: max-content;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    background-image: url(/Images/SVGG3\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: 130%;
+  }
+  .loginbox {
+    height: auto;
+    background: #020109;
+    color: #106ebe;
+    padding: 10px 2rem;
+    display: flex;
+    border: 2px solid darkgray;
+    border-radius: 15px;
+    box-shadow: 0 0px 300px -150px white;
+  }
+  .create-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  h1 {
+    margin: 20px;
+    padding: 0px 30px;
+    text-align: center;
+    font-size: 3rem;
+    color: whitesmoke;
+    box-shadow: 0px 0px 30px -50px white;
+  }
+  
+  .loginbox p {
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .loginbox input {
+    width: 90%;
+    margin: 1.1rem;
+  }
+  
+  .loginbox input[type="text"],
+  input[type="password"],
+  input[type="date"] {
+    padding: 10px 2px;
+    border: none;
+    border-bottom: 1px solid #c2c2c2;
+    background: transparent;
+    outline: none;
+    height: 10px;
+    color: #fff;
+    font-size: 15px;
+    width: 30vw;
+    max-width: 30vw;
+  }
+  .loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: darkblue;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  .loginbox input[type="submit"]:hover {
+    cursor: pointer;
+    background: #309040;
+    color: black;
+    transition: background-color 0.3s ease-in;
+  }
+  

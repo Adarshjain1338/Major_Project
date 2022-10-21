@@ -8,7 +8,7 @@ const {
 
 app.set('view engine', 'ejs');
 
-mongoose.connect('mongodb+srv://major:Neepa12345@test.ubpaqfh.mongodb.net/test');
+mongoose.connect('mongodb+srv://major:Neepa12345@test.ubpaqfh.mongodb.net/?retryWrites=true&w=majority');
 
 const moviesSchema = {
     title: String,
@@ -20,12 +20,13 @@ const Movie = mongoose.model('Movie', moviesSchema);
 
 app.get('/', (req, res) => {
     Movie.find({}, function (err, movies) {
+        console.log('hello');
         res.render('index', {
             moviesList: movies
         })
     })
 })
 
-app.listen(4000, function () {
+app.listen(3000, function () {
     console.log('server is running');
 })

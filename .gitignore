@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /.vscode
 /daria-volkova-BMnX7L9G5xc-unsplash.jpg
 /Files
@@ -6,3 +7,6 @@
 /login.css
 /login.html
 /style.css
+=======
+node_modules
+>>>>>>> 521d85256b7e028df126a1f2f59ac247126a4344

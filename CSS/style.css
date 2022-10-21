@@ -10,7 +10,6 @@ body{
     /* background: #0E141B url(/Images/svg4.png) no-repeat; */
     background-color: #171717;
     background-size:auto;
-    
 }
 
 #navbar-container{
@@ -18,6 +17,7 @@ body{
     padding: 5px;
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 #navbar-items{
     /* border: 2px solid green; */
@@ -27,12 +27,14 @@ body{
     margin: 5px;
     margin-bottom: 0px;
     width: 30%;
+    
 }
 #navbar-items ul{
     margin: 0.1em;
     display: flex;
     list-style: none;
 }
+
 #navbar-items ul li{
     padding: 10px;
     margin: 3px;
@@ -42,7 +44,7 @@ body{
 }
 
 #navbar-items ul li:hover{
-    background-color: #ff4c29;
+    background-color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
     color: #101010;

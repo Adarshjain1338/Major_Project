@@ -18,6 +18,8 @@ body {
     /* justify-content: space-evenly; */
     justify-content: center;
     background-image: url(/Images/svg3.png);
+    background-repeat: no-repeat;
+    background-size: 130%;
 }
 .loginbox {
     height: auto;

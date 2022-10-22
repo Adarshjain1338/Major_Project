@@ -52,6 +52,7 @@ body {
     margin: 15px;
     display: flex;
     justify-content: space-around;
+    flex-direction: column-reverse;
 }
 
 #cover-image {
@@ -70,17 +71,47 @@ body {
     object-fit: cover;
     border-radius: 15px;
 }
+<<<<<<< HEAD
 
 #container-details {
     padding: 10px;
+=======
+#container-details{
+    /* padding: 10px; */
+>>>>>>> 3aaabe9ca3ecce71d208e6397d5247e71d007a9b
     margin: 5px;
     border-radius: 15px;
     background-color: #b4b4b42c;
-    width: 40%;
+    width: auto;
     padding: 1.2rem;
+<<<<<<< HEAD
     overflow: hidden;
     overflow-wrap: break-word;
 
+=======
+    padding-left:5rem;
+    padding-right:5rem;
+    margin-top: 2rem;
+    height: auto;
+
+}
+#container-details p{
+    line-height: 1.5em;
+    word-wrap: break-word;
+    word-spacing: 5px;
+    text-indent: 2em;
+    font-weight: 500;
+    text-align:justify;
+    
+}
+#container-details span{
+    line-height: 1.5em;
+    word-wrap: break-word;
+    word-spacing: 5px;
+    text-indent: 2em;
+    font-weight: 500;
+    
+>>>>>>> 3aaabe9ca3ecce71d208e6397d5247e71d007a9b
 }
 
 #container-details p {
@@ -110,16 +141,18 @@ body {
 #container-2 {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    align-content: center;
+    align-items: center;
 }
 
 #container-upload {
     margin: 1.1rem;
     padding: 1.1rem;
     height: 40vh;
-    width: 50vw;
+    width: 80vw;
     border: 2px solid #cacdd2;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 #container-share {
@@ -130,14 +163,26 @@ body {
     border: 2px solid #cacdd2;
     border-radius: 10px;
 }
+<<<<<<< HEAD
 
 .upload-box {
     padding: 2rem;
+=======
+.upload-box{
+    padding: 1.5rem;
+>>>>>>> 3aaabe9ca3ecce71d208e6397d5247e71d007a9b
     gap: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
+=======
+  }
+.upload-box svg{
+    height: 10vh;
+    width: 8vw;
+>>>>>>> 3aaabe9ca3ecce71d208e6397d5247e71d007a9b
 }
 
 .upload-box svg {
@@ -154,16 +199,27 @@ body {
 .upload-box span {
     color: #fff;
 }
+<<<<<<< HEAD
 
 .fileInput-label {
     margin: 1.5rem;
     padding: 1.5rem;
+=======
+.fileInput-label{
+    margin: -0.5rem;
+    padding: 1.2rem;
+>>>>>>> 3aaabe9ca3ecce71d208e6397d5247e71d007a9b
     background-color: rgba(255, 255, 255, 0.118);
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 0px 1px 30px 1px black;
+    font-size: 17px;
 }
 
+<<<<<<< HEAD
+=======
+label.fileInput-label {}
+>>>>>>> 3aaabe9ca3ecce71d208e6397d5247e71d007a9b
 #file-input {
     width: 0.1px;
     height: 0.1px;

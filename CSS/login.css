@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 1.2em;
+    background-color: #101010;
+  }
+  
+  .loginbox {
+    width: 520px;
+    height: 520px;
+    background: #020109;
+    color: #106ebe;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 80px 30px;
+    background-image: url(/Images/SVGG3\ \(2\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid gray;
+    box-shadow: 0 0px 300px -150px white;
+}
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+  }
+  
+  .loginbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+  
+  .loginbox input {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  
+  .loginbox input[type="text"],
+  input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: darkblue;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .loginbox input[type="submit"]:hover {
+    cursor: pointer;
+    background: #309040;
+    color: black;
+    transition: background-color 0.3s ease-in;
+  }
+  
+  .loginbox a {
+    text-decoration: none;
+    padding: 10px;
+  
+    font-size: 15px;
+    line-height: 20px;
+    color: darkgrey;
+  }
+  
+  .loginbox a:hover {
+    color: blue;
+    transition: color 0.3s ease-in;
+  }
+  
+  /* Copied from Internet for placholder transition */
+  input::-webkit-input-placeholder {
+    -webkit-transition: 0.3s;
+  }
+  input:-moz-input-placeholder {
+    -moz-transition: 0.3s;
+  }
+  input::-moz-input-placeholder {
+    -moz-transition: 0.3s;
+  }
+  input:-ms-input-placeholder {
+    -ms-transition: 0.3s;
+  }
+  
+  input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  input:focus:-moz-placeholder {
+    color: transparent;
+  } /* FF 4-18 */
+  input:focus::-moz-placeholder {
+    color: transparent;
+  } /* FF 19+ */
+  input:focus:-ms-input-placeholder {
+    color: transparent;
+  } /* IE 10+ */
+  

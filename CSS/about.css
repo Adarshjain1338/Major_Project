@@ -19,7 +19,6 @@ body{
     display: flex;
     justify-content: center;
     text-decoration: none;
-    color: #cacdd2;
 }
 #navbar-items{
     /* border: 2px solid green; */

@@ -84,7 +84,11 @@ body{
     background-color: #b4b4b42c;
     width: auto;
     padding: 1.2rem;
+    padding-left:5rem;
+    padding-right:5rem;
     margin-top: 2rem;
+    height: auto;
+
 }
 #container-details p{
     line-height: 1.5em;

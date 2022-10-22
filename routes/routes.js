@@ -23,8 +23,9 @@ router.post('/post', async (req, res) => {
 router.get('/getAll', async (req, res) => {
     try {
 
-        const data = await Model.find();
-        res.status(200).json(data[0].hints.filter(hint => hint.food.label === "Cinnamon Bunnies Candies, Cinnamon Flavored Artificially Flavored, Cinnamon Flavored Artificially Flavored")[0]);
+        const data = await Model.find(Model.find({}));
+        console.log(data)
+        res.status(200).json(data[0].hints);
 
     } catch (error) {
         res.status(500).json({

@@ -12,43 +12,50 @@ body{
     background-size:auto;
 }
 
-#navbar-container{
-    /* border: 2px solid red; */
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-}
-#navbar-items{
-    /* border: 2px solid green; */
-    border-bottom: 2px solid #cacdd2;
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-    margin-bottom: 0px;
-    width: 30%;
-    
-}
-#navbar-items ul{
-    margin: 0.1em;
-    display: flex;
-    list-style: none;
-}
-
-#navbar-items ul li{
-    padding: 10px;
-    margin: 3px;
-    font-size: 1.01rem; 
-    letter-spacing: 2px;
-
-}
-
-#navbar-items ul li:hover{
-    background-color: #ffffff;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #101010;
-}
+a{
+    color: whitesmoke;
+  }
+  a:hover{
+   color: white;
+   text-decoration: none;
+  }
+  #navbar-container{
+      /* border: 2px solid red; */
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+  }
+  #navbar-items{
+      /* border: 2px solid green; */
+      border-bottom: 2px solid #cacdd2;
+      display: flex;
+      justify-content: center;
+      margin: 5px;
+      margin-bottom: 0px;
+      width: 30%;
+      
+  }
+  #navbar-items ul{
+      margin: 0.1em;
+      display: flex;
+      list-style: none;
+  }
+  
+  #navbar-items ul li{
+      padding: 10px;
+      margin: 3px;
+      font-size: 1.2rem; 
+      letter-spacing: 2px;
+  
+  }
+  
+  #navbar-items ul li:hover{
+    background-color: #ff4c29;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #101010;
+  }
 
 #container {
     padding: 5px;
@@ -186,3 +193,35 @@ label.fileInput-label {}
 .fileInput-label:hover{
     background-color: #ff4c29;
 }
+#container-details{
+    display: none;
+}
+/*---------------------scroll bar copied--------------*/
+body::-webkit-scrollbar-track {
+    padding: 2px 0;
+    background-color: #0b0b0b;
+  }
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #686868;
+    border: 1px solid #000;
+  }
+body::-webkit-scrollbar {
+    width: 7px;
+  }
+body .finished::-webkit-scrollbar-track {
+    padding: 2px 0;
+    background-color: #0b0b0b;
+  }
+body .finished::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #686868;
+    border: 1px solid #000;
+  }
+  body .finished::-webkit-scrollbar {
+    width: 7px;
+  }
+  /*--------------------------------------------------------*/
+  
